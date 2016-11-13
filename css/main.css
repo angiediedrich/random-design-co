@@ -102,7 +102,21 @@ html {
     box-sizing: inherit;
 }
 
+.page-header {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+}
 
+.page-header h1 {
+    font-size: 1em;
+    font-transform: uppercase;
+    margin: 0;
+}
+
+.page-header i {
+    color: black;
+}
 
 
 
