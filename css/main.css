@@ -106,6 +106,9 @@ html {
     background-color: #000;
     color: #fff;
     padding: 1em;
+    position: absolute;
+    height: 4.6875em;
+    width: 100%;
 }
 
 .page-header h1 {
@@ -115,7 +118,16 @@ html {
 }
 
 .page-header i {
-    color: black;
+    color: #fff;
+}
+
+.main-nav {
+    display: none;
+    color: #fff;
+}
+
+.visually-hidden {
+    display: none;
 }
 
 
