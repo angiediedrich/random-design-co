@@ -198,7 +198,7 @@ body {
 /*About*/
 
 .about {
-    padding: 4em 1.7em 3.125em 1.4em;
+    padding: 2.5em 1.4em 1.5em 1.4em;
     border: #ddd solid 1px;
 }
 
@@ -211,30 +211,19 @@ body {
 
 .work-grid {
     overflow: auto;
-    border: red 1px solid;
     padding: 1.25em;
     position: relative;
-    background: hsla(222, 100%, 100%, 0.6);
+    border: #ddd 1px solid;
 }
 
 .work-grid article {
     position: relative;
-
-}
-
-.work-grid a {
-    text-decoration: none;
-    color: #000;
-    position: absolute;
-    margin: 0;
-}
-
-.work-grid article a:hover {
-
+    border: #fff 1px solid;
+    position: relative;
+    background: hsla(222, 100%, 100%, 0.8);
 }
 
 .projects {
-    height: 14.25em;
     width: 50%;
     float: left;
     position: relative;
@@ -247,14 +236,19 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.projects-content a:hover {
+    background: none;
+}
+
 .projects-bg {
-    background: hsla(222, 100%, 100%, 0.7);
     z-index: -10;
     position: relative;
     width: 100%;
 }
 
-
+.work-grid article:hover {
+    background: none;
+}
 
 
 /*Footer*/
@@ -263,7 +257,7 @@ footer {
     clear: both;
     text-align: center;
     border: 1px solid #ddd;
-
+    font-size: 1.2em;
 }
 
 
