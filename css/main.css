@@ -155,6 +155,7 @@ img {
     float: left;
 }
 
+/*Jumbotron*/
 .jumbotron {
     position: relative;
     color: #fff;
@@ -187,7 +188,17 @@ img {
     padding: 1.5em;
 }
 
+/*About*/
 
+.about {
+    padding: 4em 1.7em 3.125em 1.4em;
+    border: #ddd solid 1px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
 
 
 
