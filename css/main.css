@@ -220,27 +220,26 @@ i {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.jumbotron h2 {
-    font-size: 3.125em;
     text-transform: uppercase;
 }
 
-.jumbotron p {
-    font-size: 1.3em;
-    border: #fff solid 3px;
-    font-weight: bold;
-    text-align: center;
-    padding: 1em 0;
+.jumbotron-content h2{
+    font-size: 3.8em;
 }
 
-.jumbotron a {
+.jumbotron-content p a {
+    font-size: 1.8em;
+    border: #fff solid 2px;
+    text-align: center;
+    padding: .6em 1em;
+}
+
+.jumbotron-content a {
     color: #fff;
     text-decoration: none;
 }
 
-.jumbotron a:hover {
+.jumbotron-content p:hover {
     background: hsla(222, 100%, 100%, 0.6);
 }
 
