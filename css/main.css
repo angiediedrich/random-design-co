@@ -94,6 +94,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*Globals*/
+
 html {
     box-sizing: border-box;
 }
@@ -105,6 +107,14 @@ html {
 img {
     max-width: 100%;
 }
+
+/*Body*/
+
+body {
+    margin: auto;
+}
+
+/*Page-Header*/
 
 .page-header {
     background-color: #000;
@@ -118,7 +128,7 @@ img {
 }
 
 .page-header h1 {
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: uppercase;
     margin: 0;
 }
@@ -126,8 +136,6 @@ img {
 .main-nav {
     position: relative;
 }
-
-
 
 .page-header i {
     color: #fff;
@@ -144,21 +152,11 @@ img {
     color: #fff;
 }
 
-.work-grid {
-    overflow: auto;
-    padding: 1.25em;
-}
-
-.projects {
-    height: 14.25em;
-    width: 45%;
-    float: left;
-}
-
 /*Jumbotron*/
 .jumbotron {
     position: relative;
     color: #fff;
+    text-align: center;
 }
 
 .jumbotron-bg {
@@ -185,7 +183,16 @@ img {
     border: #fff solid 3px;
     font-weight: bold;
     text-align: center;
-    padding: 1.5em;
+    padding: 1em 0;
+}
+
+.jumbotron a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.jumbotron a:hover {
+    background: hsla(222, 100%, 100%, 0.6);
 }
 
 /*About*/
@@ -198,6 +205,65 @@ img {
 .about p {
     font-size: 1.2em;
     line-height: 1.6em;
+}
+
+/*Latest Work*/
+
+.work-grid {
+    overflow: auto;
+    border: red 1px solid;
+    padding: 1.25em;
+    position: relative;
+    background: hsla(222, 100%, 100%, 0.6);
+}
+
+.work-grid article {
+    position: relative;
+
+}
+
+.work-grid a {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    margin: 0;
+}
+
+.work-grid article a:hover {
+
+}
+
+.projects {
+    height: 14.25em;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.projects-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects-bg {
+    background: hsla(222, 100%, 100%, 0.7);
+    z-index: -10;
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+    clear: both;
+    text-align: center;
+    border: 1px solid #ddd;
+
 }
 
 
