@@ -119,7 +119,7 @@ body {
 .page-header {
     background-color: #000;
     color: #fff;
-    padding: 1em;
+    padding: 1.5em;
     height: 4.6875em;
     width: 100%;
     position: fixed;
@@ -128,31 +128,80 @@ body {
 }
 
 .page-header h1 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-transform: uppercase;
     margin: 0;
 }
 
-.main-nav {
-    position: relative;
+.page-header {
+  position: relative;
 }
 
-.page-header i {
-    color: #fff;
-    position: absolute;
-    padding: 1.75em 0;
+/*******************Main-Nav********************/
+
+.main-nav {
+    position: relative;
     right: 0;
-    z-index: 300;
+    font-size: 1.6em;
+    padding: .3em;
 }
 
-.main-nav {
-    position: relative;
-    top: 1em;
-    right: 1em;
+i {
+    position: absolute;
+    padding: 1.75em 1em;
+    right: 0;
+    bottom: 0;
     color: #fff;
+    font-size: 2em;
+}
+
+/* Turns the links into larger clickable boxes */
+.main-nav li a {
+    color: #fff;
+}
+
+/* Pseudo selector used for a usability aid, so you know when you can click */
+.main-nav li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Hides nested hierarchy links by default */
+.main-nav li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+
+/* Shows nested hierarchy links when we mouseover the parent */
+.main-nav li:hover ul {
+    display: block;
+    right: 0;
+}
+
+/* Overrides the style on line 23 for nested link collections */
+.main-nav li li {
+    float: none;
+    font-size: .75em;
+}
+
+/* Different styling for nested hierarchy links. */
+.main-nav li li a {
+    border: none;
+    color: #fff;
+} 
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li a {
+    display: inline;
+    padding: .5em;
 }
 
 /*Jumbotron*/
+
 .jumbotron {
     position: relative;
     color: #fff;
