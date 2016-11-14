@@ -102,6 +102,10 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 .page-header {
     background-color: #000;
     color: #fff;
@@ -115,16 +119,28 @@ html {
 
 .page-header h1 {
     font-size: 1em;
-    font-transform: uppercase;
+    text-transform: uppercase;
     margin: 0;
 }
 
+.main-nav {
+    position: relative;
+}
+
+
+
 .page-header i {
     color: #fff;
+    position: absolute;
+    padding: 1.75em 0;
+    right: 0;
+    z-index: 300;
 }
 
 .main-nav {
-    display: none;
+    position: relative;
+    top: 1em;
+    right: 1em;
     color: #fff;
 }
 
@@ -137,6 +153,38 @@ html {
     height: 14.25em;
     width: 45%;
     float: left;
+}
+
+.jumbotron {
+    position: relative;
+    color: #fff;
+}
+
+.jumbotron-bg {
+    display: block;
+    z-index: -10;
+    position: relative;
+    width: 100%;
+}
+
+.jumbotron-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron h2 {
+    font-size: 3.125em;
+    text-transform: uppercase;
+}
+
+.jumbotron p {
+    font-size: 1.3em;
+    border: #fff solid 3px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5em;
 }
 
 
