@@ -104,224 +104,129 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    padding-top: 3em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
 img {
     max-width: 100%;
 }
 
-/*Body*/
-
-body {
-    margin: auto;
-}
-
-/*Page-Header*/
-
 .page-header {
-    background-color: #000;
+    background: #000;
     color: #fff;
-    padding: 1.5em;
-    height: 4.6875em;
-    width: 100%;
+    padding: 1em;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 .page-header h1 {
-    font-size: 1.4em;
-    text-transform: uppercase;
     margin: 0;
 }
 
-.page-header {
-  position: relative;
-}
-
-/*******************Main-Nav********************/
-
-.main-nav {
-    position: relative;
-    right: 0;
-    font-size: 1.6em;
-    padding: .3em;
-}
-
-i {
+.page-header .main-nav {
     position: absolute;
-    padding: 1.75em 1em;
-    right: 0;
-    bottom: 0;
+    top: 1em;
+    right: 1em;
+}
+
+.page-section {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn {
+    font-size: 1.25em;
+    border: 0.125em solid #000;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #000;
     color: #fff;
-    font-size: 2em;
 }
-
-/* Turns the links into larger clickable boxes */
-.main-nav li a {
-    color: #fff;
-}
-
-/* Pseudo selector used for a usability aid, so you know when you can click */
-.main-nav li a:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Hides nested hierarchy links by default */
-.main-nav li ul {
-    display: none;
-    position: absolute;
-    padding: 0;
-}
-
-/* Shows nested hierarchy links when we mouseover the parent */
-.main-nav li:hover ul {
-    display: block;
-    right: 0;
-}
-
-/* Overrides the style on line 23 for nested link collections */
-.main-nav li li {
-    float: none;
-    font-size: .75em;
-}
-
-/* Different styling for nested hierarchy links. */
-.main-nav li li a {
-    border: none;
-    color: #fff;
-} 
-
-.main-nav ul {
-    list-style: none;
-}
-
-.main-nav li a {
-    display: inline;
-    padding: .5em;
-}
-
-/*Jumbotron*/
 
 .jumbotron {
+    padding: 0;
     position: relative;
-    color: #fff;
-    text-align: center;
 }
 
-.jumbotron-bg {
-    display: block;
-    z-index: -10;
+.jumbotron_bg {
     position: relative;
+    z-index: -10;
+    display: block;
     width: 100%;
 }
 
-.jumbotron-content {
+.jumbotron_content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
-}
-
-.jumbotron-content h2{
-    font-size: 3.8em;
-}
-
-.jumbotron-content p a {
-    font-size: 1.8em;
-    border: #fff solid 2px;
     text-align: center;
-    padding: .6em 1em;
-}
-
-.jumbotron-content a {
+    line-height: 1;
     color: #fff;
-    text-decoration: none;
 }
 
-.jumbotron-content p:hover {
-    background: hsla(222, 100%, 100%, 0.6);
+.jumbotron_content h2 {
+    margin-top: 0;
+    font-size: 3em;
 }
 
-/*About*/
-
-.about {
-    padding: 2.5em 1.4em 1.5em 1.4em;
-    border: #ddd solid 1px;
+.jumbotron_content .btn {
+    color: #fff
+    border-color: #fff;
 }
 
-.about p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-}
-
-/*Latest Work*/
-
-.work-grid {
-    overflow: auto;
-    padding: 1.25em;
-    position: relative;
-    border: #ddd 1px solid;
-}
-
-.work-grid article {
-    position: relative;
-    border: #fff 1px solid;
-    position: relative;
-    background: hsla(222, 100%, 100%, 0.8);
-}
-
-.projects {
-    width: 50%;
-    float: left;
-    position: relative;
-}
-
-.projects-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.projects-content a {
-    text-decoration: none;
+.jumbotron_content .btn:hover {
+    background-color: #fff;
     color: #000;
 }
 
-.projects-content a:hover {
-    background: none;
-}
-
-.projects-bg {
-    z-index: -10;
+.project-thumb {
     position: relative;
-    width: 100%;
+    width: 50%;
+    float: left;
+    background-color: hsla(0, 100%, 100%, 0.75);
+    border: 1px solid #fff;
 }
 
-.work-grid article:hover {
-    background: none;
+.project-thumb:hover {
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.project-thumb img {
+    position: relative;
+    z-index: -10;
+}
+
+.project-thumb h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: #000;
+}
+
+.project-thumb:hover h3 {
     color: #fff;
 }
 
-
-/*Footer*/
-
-footer {
-    clear: both;
+.page-footer {
     text-align: center;
-    border: 1px solid #ddd;
-    font-size: 1.2em;
 }
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
